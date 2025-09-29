@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Code, Users, Zap, Shield, Globe, Mail, Phone, MapPin } from "lucide-react"
+import { ArrowRight, Code, Users, Zap, Shield, Globe, Mail, MapPin } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
 
 export default function HomePage() {
@@ -48,14 +48,14 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">
-                Trusted Software Partner
+                Family-Owned Business
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-balance mb-6">
                 Custom Software Solutions for <span className="text-primary">Growing Organizations</span>
               </h1>
               <p className="text-xl text-muted-foreground text-pretty mb-8 leading-relaxed">
                 We deliver thoughtful, high-quality software development and consulting services tailored to each
-                client's unique needs. Building long-term relationships grounded in trust, collaboration, and technical
+                client&apos;s unique needs. Building long-term relationships grounded in trust, collaboration, and technical
                 excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -224,7 +224,7 @@ export default function HomePage() {
             Ready to Transform Your Business with Custom Software?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 text-pretty">
-            Let's discuss how we can help you harness the power of technology to solve complex challenges efficiently
+            Let&apos;s discuss how we can help you harness the power of technology to solve complex challenges efficiently
             and innovatively.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -255,7 +255,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Contact Us</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Ready to start your project? Get in touch and let's discuss how we can help transform your business.
+              Ready to start your project? Get in touch and let&apos;s discuss how we can help transform your business.
             </p>
           </div>
           <ContactForm />
