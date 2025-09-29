@@ -104,7 +104,7 @@ function checkRateLimit(clientId: string): { allowed: boolean; resetTime?: numbe
   return { allowed: true }
 }
 
-export async function sendContactEmail(rawData: any) {
+export async function sendContactEmail(rawData: ContactFormData) {
   try {
     // Validate required environment variables
     if (!process.env.RESEND_API_KEY) {
