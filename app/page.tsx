@@ -1,10 +1,19 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Code, Users, Zap, Shield, Globe, Mail, MapPin } from "lucide-react"
-import { ContactForm } from "@/components/contact-form"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  ArrowRight,
+  Code,
+  Users,
+  Zap,
+  Shield,
+  Globe,
+  Mail,
+  MapPin,
+} from "lucide-react";
+import { ContactForm } from "@/components/contact-form";
 
 export default function HomePage() {
   return (
@@ -15,24 +24,75 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">R</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  role="img"
+                  aria-label="R logo"
+                >
+                  <defs>
+                    <linearGradient id="g" x1="100%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="#2F3731" />
+                      <stop offset="50%" stopColor="#556B2F" />
+                      <stop offset="100%" stopColor="#C1A15B" />
+                    </linearGradient>
+                  </defs>
+
+                  <rect
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="40"
+                    rx="8"
+                    ry="8"
+                    fill="url(#g)"
+                  />
+
+                  <text
+                    x="50%"
+                    y="50%"
+                    fill="#FFFFFF"
+                    fontFamily="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+                    fontWeight="700"
+                    fontSize="18"
+                    textAnchor="middle"
+                    dominantBaseline="middle"
+                  >
+                    R
+                  </text>
+                </svg>
               </div>
               <span className="font-semibold text-lg">RAJR Software LLC</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#about"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 About
               </a>
-              <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#services"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Services
               </a>
-              <a href="#values" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#values"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Values
               </a>
               <Button
                 size="sm"
                 className="bg-primary hover:bg-primary/90"
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 <Mail className="w-4 h-4 mr-2" />
                 Contact Us
@@ -51,18 +111,24 @@ export default function HomePage() {
                 Family-Owned Business
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-balance mb-6">
-                Custom Software Solutions for <span className="text-primary">Growing Organizations</span>
+                Custom Software Solutions for{" "}
+                <span className="text-primary">Growing Organizations</span>
               </h1>
               <p className="text-xl text-muted-foreground text-pretty mb-8 leading-relaxed">
-                We deliver thoughtful, high-quality software development and consulting services tailored to each
-                client&apos;s unique needs. Building long-term relationships grounded in trust, collaboration, and technical
-                excellence.
+                We deliver thoughtful, high-quality software development and
+                consulting services tailored to each client&apos;s unique needs.
+                Building long-term relationships grounded in trust,
+                collaboration, and technical excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary/90"
-                  onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() =>
+                    document
+                      .getElementById("contact")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
                 >
                   <Mail className="w-5 h-5 mr-2" />
                   Start Your Project
@@ -86,7 +152,9 @@ export default function HomePage() {
                     <div className="w-3 h-3 bg-accent rounded-full"></div>
                     <div className="w-3 h-3 bg-secondary rounded-full"></div>
                   </div>
-                  <span className="text-sm text-muted-foreground">rajrsoftware.com</span>
+                  <span className="text-sm text-muted-foreground">
+                    rajrsoftware.com
+                  </span>
                 </div>
                 <div className="space-y-3">
                   <div className="h-4 bg-muted rounded w-3/4"></div>
@@ -105,10 +173,13 @@ export default function HomePage() {
       <section id="about" className="py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">About RAJR Software LLC</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              About RAJR Software LLC
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              A forward-thinking software development company specializing in delivering high-quality, scalable, and
-              tailored software solutions.
+              A forward-thinking software development company specializing in
+              delivering high-quality, scalable, and tailored software
+              solutions.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -116,21 +187,24 @@ export default function HomePage() {
               <Users className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Client-Focused</h3>
               <p className="text-muted-foreground">
-                We work closely with clients as true partners, understanding your unique challenges and goals.
+                We work closely with clients as true partners, understanding
+                your unique challenges and goals.
               </p>
             </Card>
             <Card className="p-6 text-center">
               <Zap className="w-12 h-12 text-secondary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Innovation-Driven</h3>
               <p className="text-muted-foreground">
-                Constantly exploring new technologies and approaches to deliver cutting-edge solutions.
+                Constantly exploring new technologies and approaches to deliver
+                cutting-edge solutions.
               </p>
             </Card>
             <Card className="p-6 text-center">
               <Shield className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Quality Assured</h3>
               <p className="text-muted-foreground">
-                Delivering solutions that exceed expectations with transparent and ethical practices.
+                Delivering solutions that exceed expectations with transparent
+                and ethical practices.
               </p>
             </Card>
           </div>
@@ -141,17 +215,23 @@ export default function HomePage() {
       <section id="services" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Services</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Our Services
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Comprehensive software development services designed to meet diverse client needs.
+              Comprehensive software development services designed to meet
+              diverse client needs.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="p-6">
               <Code className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Custom Software Development</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Custom Software Development
+              </h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Web applications, internal tools, and APIs built to your specifications.
+                Web applications, internal tools, and APIs built to your
+                specifications.
               </p>
               {/* <Button variant="ghost" size="sm" className="p-0 h-auto">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
@@ -159,9 +239,12 @@ export default function HomePage() {
             </Card>
             <Card className="p-6">
               <Globe className="w-10 h-10 text-secondary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Consulting & Strategy</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Consulting & Strategy
+              </h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Technical strategy, architecture review, and scalability planning.
+                Technical strategy, architecture review, and scalability
+                planning.
               </p>
               {/* <Button variant="ghost" size="sm" className="p-0 h-auto">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
@@ -171,7 +254,8 @@ export default function HomePage() {
               <Shield className="w-10 h-10 text-accent mb-4" />
               <h3 className="text-lg font-semibold mb-2">Ongoing Support</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Retainers for continuous improvements, updates, and troubleshooting.
+                Retainers for continuous improvements, updates, and
+                troubleshooting.
               </p>
               {/* <Button variant="ghost" size="sm" className="p-0 h-auto">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
@@ -179,9 +263,12 @@ export default function HomePage() {
             </Card>
             <Card className="p-6">
               <Zap className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Integration & Automation</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                Integration & Automation
+              </h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Streamlining workflows and connecting disparate systems efficiently.
+                Streamlining workflows and connecting disparate systems
+                efficiently.
               </p>
               {/* <Button variant="ghost" size="sm" className="p-0 h-auto">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
@@ -195,18 +282,35 @@ export default function HomePage() {
       <section id="values" className="py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Core Values</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Our Core Values
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
               The principles that guide every project and client relationship.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
-              { title: "Integrity", desc: "Transparent and ethical practices in every engagement." },
-              { title: "Innovation", desc: "Constantly exploring new technologies and approaches." },
-              { title: "Collaboration", desc: "Working closely with clients as true partners." },
-              { title: "Quality", desc: "Delivering solutions that exceed expectations." },
-              { title: "Adaptability", desc: "Agile and responsive to client needs and evolving markets." },
+              {
+                title: "Integrity",
+                desc: "Transparent and ethical practices in every engagement.",
+              },
+              {
+                title: "Innovation",
+                desc: "Constantly exploring new technologies and approaches.",
+              },
+              {
+                title: "Collaboration",
+                desc: "Working closely with clients as true partners.",
+              },
+              {
+                title: "Quality",
+                desc: "Delivering solutions that exceed expectations.",
+              },
+              {
+                title: "Adaptability",
+                desc: "Agile and responsive to client needs and evolving markets.",
+              },
             ].map((value, index) => (
               <Card key={index} className="p-6 text-center">
                 <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
@@ -224,14 +328,18 @@ export default function HomePage() {
             Ready to Transform Your Business with Custom Software?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 text-pretty">
-            Let&apos;s discuss how we can help you harness the power of technology to solve complex challenges efficiently
-            and innovatively.
+            Let&apos;s discuss how we can help you harness the power of
+            technology to solve complex challenges efficiently and innovatively.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90"
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               <Mail className="w-5 h-5 mr-2" />
               Get Started Today
@@ -255,7 +363,8 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Contact Us</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Ready to start your project? Get in touch and let&apos;s discuss how we can help transform your business.
+              Ready to start your project? Get in touch and let&apos;s discuss
+              how we can help transform your business.
             </p>
           </div>
           <ContactForm />
@@ -269,13 +378,15 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-sm">R</span>
+                  <span className="text-primary-foreground font-bold text-sm">
+                    R
+                  </span>
                 </div>
                 <span className="font-semibold text-lg">RAJR Software LLC</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                Empowering organizations to harness the power of technology to solve complex challenges efficiently and
-                innovatively.
+                Empowering organizations to harness the power of technology to
+                solve complex challenges efficiently and innovatively.
               </p>
             </div>
             <div>
@@ -311,5 +422,5 @@ export default function HomePage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

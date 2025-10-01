@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "Professional software development services for businesses and non-profits. Custom solutions, consulting, and ongoing support.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 }
 
 export default function RootLayout({
@@ -19,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
