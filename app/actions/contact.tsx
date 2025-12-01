@@ -166,7 +166,7 @@ export async function sendContactEmail(rawData: ContactFormData) {
 
     // Send email using Resend
     const { data: emailData, error } = await resend.emails.send({
-      from: 'jolie_rabideau@rajrsoftware.com',
+      from: 'RAJR Software <contact@rajrsoftware.com>',
       to: ['hello@rajrsoftware.com'],
       replyTo: sanitizedData.email,
       subject: `New Contact Form Submission from ${sanitizedData.name}`,
